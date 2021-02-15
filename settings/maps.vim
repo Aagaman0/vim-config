@@ -8,9 +8,9 @@ map <leader>b :Buffers<CR>
 
 nmap <leader>e :CocCommand explorer<CR>
 
-" auto save and run in vim python and shell
 nmap <leader>g :GoDecls<CR>
 
+" Deathly mappings
 autocmd filetype go map <buffer> <S-s> <esc>:w<cr>:GoRun<cr>
 autocmd filetype go map <buffer> <S-f> <esc>:w<cr>:GoTest<cr>
 autocmd filetype sh map <buffer> <s-s> <esc>:w<cr>:exec '!sh' shellescape(@%, 1)<cr>
